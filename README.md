@@ -81,10 +81,8 @@ cd bog-app-time-trials
 Create a new Rails project:
 
 ```bash
-$  rails new bog_app_three -T -d postgresql
-$  cd bog_app_three
-$  rails db:create
-$  rails s
+$  rails new bog_app_one -T -d postgresql
+$  cd bog_app_one
 ```
 
 Create your development database:
@@ -106,52 +104,9 @@ Your app should be up and running at `localhost:3000`.
 
 Rails handles CSS and JavaScript with a system called the asset pipeline. We'll go over it more next week, but for now, here's how to add a SCSS library using the asset pipeline.
 
-Third-party libraries belong in the `vendor/assets` sub-directory of your Rails app. You'll need to download a your library's CSS or SCSS file and add it to this directory.
+For Bootstrap, a simple way to do this is with the [bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem. To go with this method, follow the [instructions in `bootstrap-integration.md`](/bootstrap-integration.md)
 
-For Bootstrap, a simple way to do this is with the [bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem. Click link to their github repo and follow the instructions for Ruby on Rails. Make sure however that you also install the jquery gem by adding ``` gem 'jquery-rails' ``` to your gemfile and then running ``` bundle install ```.
-
-
-
-
-<!-- One way you can do that is to use the Terminal. You can use `curl` to make HTTP requests, like `GET`ing the file from a CDN.  Then, you can use the `>` command to save the result of `curl` to a new file inside the `vendor/assets/stylesheets` sub-directory. The entire Terminal bash command will have this format: `curl INSERT YOUR CDN LINK HERE  > vendor/assets/stylesheets/YOUR NEW FILE NAME`.
-
-Examples for Boostrap and Materialize are below, but you may want to find and use the most recent version your CDN if it's no longer the version in the example.
-
-```bash
-$  curl https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css > vendor/assets/stylesheets/bootstrap-3.3.7.min.css
-$  curl https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css > vendor/assets/stylesheets/materialize-0.98.2.min.css
-```
-You should see that that file is now in your project's directory.
-
-To include the CSS from the library file you just downloaded into your pages, require it in `app/assets/stylesheets/application.css`.
-
-Find the line where it says `*= require_tree .`, and add a new line above it as follows:
-
-```css
-/*
- * app/assets/stylesheets/application.css
- */
-
-/*
- *
- *= require bootstrap-3.3.7.min
- *= require_tree .
- *= require_self
- */
-```
-or
-```css
-/*
- * app/assets/stylesheets/application.css
- */
-
-/*
- *
- *= require materialize-0.98.2.min
- *= require_tree .
- *= require_self
- */
-``` -->
+For Materialize, you can follow the 
 
 #### 3. Define the `root` and creatures `index` routes
 
