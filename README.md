@@ -100,13 +100,13 @@ Your app should be up and running at `localhost:3000`.
 
 > Watch Out! *You may already have a server running on localhost:3000!*
 
-#### 2. Add Bootstrap to your project (optional)
+#### 2. Add Bootstrap or Materialize to your project (optional)
 
 Rails handles CSS and JavaScript with a system called the asset pipeline. We'll go over it more next week, but for now, here's how to add a SCSS library using the asset pipeline.
 
 For Bootstrap, a simple way to do this is with the [bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem. To go with this method, follow the [instructions in `bootstrap-integration.md`](/bootstrap-integration.md)
 
-For Materialize, you can follow the 
+For Materialize, you can use the analogous [materialize-sass](https://github.com/mkhairi/materialize-sass/#installation) gem. Follow [these instructions to integrate materialize](/materialize-integration.md).
 
 #### 3. Define the `root` and creatures `index` routes
 

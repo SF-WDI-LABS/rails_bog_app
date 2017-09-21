@@ -27,7 +27,7 @@ in `app/assets/stylesheets/application.scss`.
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access](https://github.com/twbs/bootstrap-sass/issues/79#issuecomment-4428595) Bootstrap mixins or variables.
 
-Require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
+Next, require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
 
 ```js
 //= require jquery
