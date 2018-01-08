@@ -16,7 +16,7 @@ In `app/assets/stylesheets`, change the file extension of `application.css` to `
 @import "bootstrap";
 ```
 
-`bootstrap-sprockets` must be imported before `bootstrap` for the icon fonts to work. You can include other `scss` files using the same `@import` syntax. For example, if you created a new SASS file called `app/assets/stylesheets/homepage.scss`, you would include the following line in `app/assets/stylesheets/application.scss`:
+You can include other `scss` files using the same `@import` syntax. For example, if you created a new SASS file called `app/assets/stylesheets/homepage.scss`, you would include the following line in `app/assets/stylesheets/application.scss`:
 
 ```scss
 @import "homepage";
