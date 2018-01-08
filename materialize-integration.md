@@ -1,9 +1,9 @@
 ## Integrating Materialize into your Rails Project
 
-In your Gemfile, add the `jquery` gem and the materialize-sass gem:
+In your Gemfile, add the `jquery-rails` gem and the `materialize-sass` gem:
 
 ```ruby
-gem 'jquery'
+gem 'jquery-rails'
 gem 'materialize-sass'
 ```
 
